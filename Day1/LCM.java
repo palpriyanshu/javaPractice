@@ -1,4 +1,4 @@
-public class HCF{
+public class LCM{
   public static void main(String[] args){
     final int num1 = Integer.parseInt(args[0]);
     final int num2 = Integer.parseInt(args[1]);
@@ -14,7 +14,6 @@ public class HCF{
       smallerNum = largerNum % smallerNum;
       largerNum = hcf;
     }
-    System.out.println("HCF of " + num1 + " and " + num2 + " is " + largerNum);
-
+    System.out.println("LCM of " + num1 + " and " + num2 + " is " + (num1 * num2)/largerNum);
   }
 }
